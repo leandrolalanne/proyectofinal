@@ -1,0 +1,363 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+.contenedorPadre{
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "hero hero hero hero"
+    "boxes boxes boxes boxes"
+    "footer footer footer footer";
+    grid-template-columns: 100%;
+}
+/* ------------ HEADER ------------ */
+header {
+    grid-area: header;
+    background-color: #130f40;
+    background-image: url(/img/ptt_b.svg);
+    background-repeat: repeat;
+    background-size: 100%;
+    color:#ecf0f1;
+    padding: 0px 3vh 0px 3vh;
+    min-height: 10vh;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.navegacion li {
+    display:inline-block;
+    padding: 0px 20px;
+}
+.logo_header {
+    padding: 20px 5px 5px 35px;
+    height: 8vh;
+}
+/* ------------ HERO BANNER ------------ */
+.hero_container{
+    grid-area: hero;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
+    min-height: 90vh;
+}
+.hero{
+    width: 70%;
+    text-align: center;
+    color: azure
+}
+#hero-home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/hero.jpg");
+}
+#hero-nos{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/nosotros.jpg");
+}
+#hero-reservas{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/reservas.jpg");
+}
+#hero-menu{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/menu-hero.jpg");
+}
+#hero-contacto{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/contacto.jpg");
+}
+.heroText{
+    font-family: 'Righteous', cursive;
+    color: azure;
+    font-weight: bold;
+    font-size: 6vh;
+    text-align: center;
+    font-stretch: expanded;
+}
+.frase{
+    font-family: 'Raleway', sans-serif;
+    color: azure;
+    font-weight: 100;
+    font-size: 4vh;
+    font-style: italic;
+    text-align: center;
+    font-stretch: expanded;
+}
+/* ------------ CONTENIDO DEL SITIO ------------ */
+.content {
+    background-image: #ecf0f1 ;
+    background-image: url(/img/ptt2_b.svg);
+    background-size: 50%;
+    background-repeat: repeat;
+}
+.boxes {
+    grid-area: boxes;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5vh 0px 5vh 0px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 33vh;
+    min-height:33vh;
+    background-color: #130f40;
+    background-image: url(/img/ptt.svg);
+    background-size: 300%;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+    color:#ecf0f1;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px 25px 25px 25px;
+    margin: 1%;
+}
+.boxText {
+    width: 120vh;
+    background-color: #130f40;
+    background-image: url(/img/ptt.svg);
+    background-size: 300%;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+    color:#ecf0f1;
+    border-radius: 5px;
+    padding: 15px 25px 25px 25px;
+    margin: 1%;
+}
+#boxNos{
+    width: 120vh;
+    margin: 1vh 0px 1vh 0px;
+}
+.box-foto{
+    border-radius: 5px;
+    width: 30vh;
+    margin: 5px;
+}
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    width: 50%;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 5px 5px 5px 5px;
+}
+/* ------------ ESTILO DE TITULOS ------------ */
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 5vh;
+    font-stretch: expanded;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 4vh;
+}
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-weight: bold;
+    font-size: 2vh;
+}
+h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.5vh;
+}
+h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.5vh;
+}
+/* ------------ BOTONES Y LINK ------------ */
+.button{
+    background-color: #d63031;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button:hover{
+    background-color:#ecf0f1;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.5)
+}
+.heroButtonContainer{
+    display: flex;
+    justify-content: center;
+}
+.button-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/img/ptt_b.svg);
+    background-repeat: repeat;
+    background-size: 900px;
+    margin: 1vh;
+    width: 20vh;
+    height: 6vh;
+}
+.button-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11vh;
+    border-radius: 3px;
+}
+a:link {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.8vh;
+    color: white;
+}
+a:visited {
+    color:white;
+}
+a:hover {
+    color: #e74c3c;
+    font-weight: 600;
+    text-shadow: #ecf0f1;
+}
+a:active {
+    color: #130f40;
+}
+/* ------------ ESTILOS DE FOOTER ------------ */
+footer {
+    grid-area: footer;
+    background-color: #130f40;
+    background-image: url(/img/ptt_b.svg);
+    color:#ecf0f1;
+}
+.pie {
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.direccion {
+    display: block;
+    text-align: center;
+}
+.direccionFoto{
+    background-image: url(/img/local.jpg);
+    width: 280px;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.map{
+    border-radius: 5px;
+    width: 280px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+/* ------------ -------------- ------------ */
+/* ------------ MEDIA QUERRIES ------------ */
+/* ------------ -------------- ------------ */
+@media (max-width: 600px) {
+    .hero{
+        width: 95%;
+        text-align: center;
+        color: azure
+    }
+    .box {
+        background-size: 300%;
+        width: 95%;
+        min-width: 150px;
+        border-radius: 5px;
+        padding: 15px 25px 25px 25px;
+        margin: 1%;
+    }
+    .box-foto{
+        display: none;
+    }
+    .heroText{
+        font-family: 'Righteous', cursive;
+        color: azure;
+        font-weight: bold;
+        font-size: 6vh;
+        text-align: center;
+        font-stretch: expanded;
+    }
+    .frase{
+        font-family: 'Raleway', sans-serif;
+        color: azure;
+        font-weight: 100;
+        font-size: 3.5vh;
+        font-style: italic;
+        text-align: center;
+        font-stretch: expanded;
+    }
+}
+@media (max-width: 400px) {
+    header{
+        padding: 0px 0px 0px 10px;
+        min-height: 10vh;
+    }
+    .navegacion li {
+        display:inline-block;
+        padding: 0px 0px;
+    }
+    .logo_header {
+        padding: 0px;
+        min-height: 3vh;
+    }
+    .navegacion{
+        display: none;
+    }
+    .hero{
+        width: 95%;
+    }
+    .box {
+        background-size: 300%;
+        width: 95%;
+        border-radius: 5px;
+        padding: 15px 25px 25px 25px;
+        margin: 1%;
+    }
+    .box-foto{
+        display: none;
+    }
+    .heroText{
+        font-weight: bold;
+        font-size: 3vh;
+    }
+    .frase{
+        font-weight: 100;
+        font-size: 2vh;
+    }
+    .direccionFoto{
+    display: none;
+    }
+    .map{
+        display: none;
+    }
+    .pie{
+        text-align: center;
+        font-size: 1vh;
+    }
+}
+@media (max-width: 200px) {
+    .logo_header {
+        padding: 0px px px 0px;
+        min-height: 2vh;
+    }
+    .heroText{
+        font-weight: bold;
+        font-size: 15px;
+    }
+    a:link {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        font-size: 10px;
+        color: white;
+    }
+}

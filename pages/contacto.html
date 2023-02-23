@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AIKE SUSHI</title>
+<!-- ICONOS -->
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<!-- CSS BOOSTRAP-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<!-- comienzo del HEADER -->
+<header class="header sticky-top"> <!-- BOOSTRAP NAVBAR -->
+	<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+		<div class="container-fluid">
+			<img  class="navbar-brand logo_header" id="logo" src="/img/header-logo.png" alt="Logo">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="/index.html" class="nav-link active">|&nbsp;&nbsp;Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a href="/pages/nosotros.html" class="nav-link active">|&nbsp;&nbsp;Nosotros</a>
+					</li>
+					<li class="nav-item">
+						<a href="/pages/menu.html" class="nav-link active">|&nbsp;&nbsp;Menú</a>
+					</li>
+					<li class="nav-item">
+						<a href="/pages/reservas.html" class="nav-link active">|&nbsp;&nbsp;Reservas</a>
+					</li>
+					<li class="nav-item">
+						<a href="/pages/contacto.html" class="nav-link active">|&nbsp;&nbsp;Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav> <!-- fin del BOOSTRAP NAVBAR -->
+</header>
+<!-- fin del header -->
+<!-- Comienzo del MAIN -->
+		<main class="content">
+			<section class="hero_container" id="hero-contacto"> <!-- HERO -->
+				<article class="hero">
+					<h1 class="heroText">CONTACTO</h1>
+					<p class="frase">Comentarios, sugerencias, Pedidos Especiales?</p>
+				</article>	
+			</section>
+			<section class="boxes"> <!-- Boxes -->
+				<div class="boxText"> <!-- Boxe Container -->
+					<div class="container my-5"> <!-- Formulario de Boostrap -->
+						<h1 class="text-center">Contáctanos</h1>
+						<div class="row justify-content-center">
+						<div class="col-md-6">
+							<form action="#" method="POST">
+							<div class="mb-3">
+								<label for="name" class="form-label">Nombre completo</label>
+								<input type="text" class="form-control" id="name" name="name" required>
+							</div>
+							<div class="mb-3">
+								<label for="email" class="form-label">Correo electrónico</label>
+								<input type="email" class="form-control" id="email" name="email" required>
+							</div>
+							<div class="mb-3">
+								<label for="subject" class="form-label">Asunto</label>
+								<input type="text" class="form-control" id="subject" name="subject" required>
+							</div>
+							<div class="mb-3">
+								<label for="message" class="form-label">Mensaje</label>
+								<textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary">Enviar</button>
+							</form>
+						</div>
+						</div>
+					</div> <!-- fin de Formulario de Boostrap -->
+				</div> <!-- din de Box Container -->
+			</section> <!-- fin de Boxes -->
+		</main>
+<!-- fin del main     -->
+<!-- Comienzo del FOOTER -->
+		<footer>
+		<section class="pie">
+			<article class="direccion">
+				<div class="direccionFoto"></div>
+				<h5>123 Calle Falsa - CABA, Argentina.</h5>
+			</article>
+			<article class="direccion">
+				<div><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.922077534981!2d-58.43504128477102!3d-34.580838180465435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb591bf322165%3A0xe51b2dd25ca77416!2sSoler%205608%2C%20C1425BYH%20CABA!5e0!3m2!1ses-419!2sar!4v1650330230200!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+				<h5><span class="iconify" data-icon="bi:whatsapp" data-inline="false"></span> +54 11 15785490</h5>
+				</article>	
+				<article>
+				<h5><span class="iconify" data-icon="ant-design:mail-outlined" data-inline="false"></span> Newstter</h5>
+				<h5>Inscribite para recibir novedades, menús especiales y eventos.</h5>
+				<a href="#">Inscribirse</a>
+			</article>
+			<article>
+				<h5>Seguinos:</h5>
+				<a href="#"><span class="iconify" data-icon="akar-icons:facebook-fill" data-inline="false"></span></a>
+				<a href="#"><span class="iconify" data-icon="entypo-social:instagram-with-circle" data-inline="false"></span></a>
+				<a href="#"><span class="iconify" data-icon="entypo-social:youtube-with-circle" data-inline="false"></span></a>
+			</article>
+		</section>
+		</footer>
+<!-- Fin del footer   -->
+	</div><!-- Fin del ContenedorPadre -->
+<!-- BOOSTRAP SCRIPT al final para optimizar el renderizado -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
